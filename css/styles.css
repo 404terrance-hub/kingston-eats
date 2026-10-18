@@ -16,3 +16,16 @@ h1,h2,h3,.serif{letter-spacing:-.025em}
 .hero-small .eyebrow{color:#f1b978}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e6ac62;outline-offset:3px}
 .image-credit{font-size:.78rem;line-height:1.5}
+
+/* Enhanced food menus and live reservation summary */
+.dish-tag{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:.72rem;font-weight:700;background:#fff0e8;color:#742a2a}
+.dish-tag.veggie{background:#e4f3e6;color:#205b37}
+.dish-tag.spice-2,.dish-tag.spice-3{background:#ffe1d9;color:#9d172a}
+.dish-tag.spice-3{background:#9d172a;color:#fff}
+.menu-row h4{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:0}
+.menu-price{font-size:1.05rem;font-variant-numeric:tabular-nums;min-width:90px;text-align:right}
+.reservation-live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.reservation-live-grid dt{font-size:.73rem;color:#756666;text-transform:uppercase;letter-spacing:.05em}
+.reservation-live-grid dd{font-weight:700;margin:3px 0 0;overflow-wrap:anywhere}
+.live-summary-panel{border-left:4px solid #9d172a}
+@media(max-width:575px){.reservation-live-grid{grid-template-columns:1fr}.menu-price{min-width:70px}}
